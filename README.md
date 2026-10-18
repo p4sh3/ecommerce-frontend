@@ -4,11 +4,11 @@ Frontend en Next.js 16 (App Router) para consumir la API REST de `ecommerce-api`
 
 ## Configuración
 
-Requisitos: Node.js 20.9 o posterior, pnpm y la API Laravel activa.
+Requisitos: Node.js 20.9 o posterior, npm y la API Laravel activa.
 
 ```bash
 cd ecommerce-frontend
-pnpm install
+npm ci
 cp .env.example .env.local
 ```
 
@@ -53,15 +53,15 @@ Copia el `whsec_...` que imprime Stripe CLI a `STRIPE_WEBHOOK_SECRET` en `ecomme
 
 ```bash
 cd ecommerce-frontend
-pnpm dev
+npm run dev
 ```
 
 Abre <http://localhost:3000>. Comprobaciones locales:
 
 ```bash
 cd ecommerce-frontend
-pnpm lint
-pnpm build
+npm run lint
+npm run build
 ```
 
 ## Validación y evidencias

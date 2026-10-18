@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import ProductGrid from "@/components/product-grid";
 import { ProductGridSkeleton } from "@/components/product-grid-skeleton";
 
-export default function Home() {
+export default async function Home() {
+  await connection();
+
   return (
     <main>
       <section className="hero shell">
